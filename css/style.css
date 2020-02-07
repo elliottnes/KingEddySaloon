@@ -11,6 +11,12 @@ h1, h2, h3 {
   text-align: center;
 }
 
+h1::before {
+  background: url('image/left.jpg');
+  height: 20px;
+  width: 20px;
+}
+
 h6 {
   font-family: 'Ultra', serif;
   color: #ffffde;
@@ -111,12 +117,17 @@ p {
   color: #252726;
   text-align: center;
   font-family: 'Ultra', serif;
-  font-size: 24px;
+  font-size: 14px;
+  transition: 0.25s;
+  /* 0.5 second transition effect to slide in the sidenav */
+  transition-timing-function: cubic-bezier(.4, .04, .77, .69);
 }
 
 /* NOTE: fix to make border show on hover */
 #merch:hover {
-  border-color: #252726;
+  font-size: 12px;
+  outline: 5px solid #252726;
+  outline-offset: -10px;
 }
 
 @media screen and (max-height: 450px) {
