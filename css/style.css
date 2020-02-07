@@ -1,0 +1,130 @@
+body {
+  background-color: #252726;
+}
+
+/* NOTE: FONTS */
+h1, h2, h3 {
+  font-family: 'Ultra', serif;
+  color: #ffffde;
+  font-size: 72px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+h6 {
+  font-family: 'Ultra', serif;
+  color: #ffffde;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+p {
+  font-family: 'Nanum Gothic', sans-serif;
+  color: #ffffde;
+  font-size: 14px;
+  text-align: center;
+}
+
+.menu {
+  position: fixed;
+  top: 20px;
+  right: 40px;
+}
+
+.websiteborder {
+  border: 10px solid #ffffde;
+  margin: 10px;
+  padding: 20px;
+}
+
+.sidenav {
+  height: 100%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Stay on top */
+  top: 0;
+  /* Stay at the top */
+  right: 0;
+  background-color: #ffffde;
+  /* Black*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidenav */
+  transition-timing-function: cubic-bezier(1, .42, .71, 1);
+  text-align: right;
+}
+
+.sidenav a {
+  padding: 8px 100px 8px 8px;
+  text-decoration: none;
+  font-size: 42px;
+  color: #f7ee31;
+  display: block;
+  transition: 0.3s;
+  transition-timing-function: cubic-bezier(1, .42, .71, 1);
+  font-family: 'Ultra', serif;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #252726;
+  letter-spacing: 4px;
+}
+
+.bigmargin {
+  margin-top: 80px;
+  display: block;
+}
+
+.littlemargin {
+  margin-top: 35px;
+}
+
+.contact-height {
+  height: 200px;
+}
+
+#img {
+  position: relative;
+}
+
+#imgtext {
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto
+}
+
+#merch {
+  height: 200px;
+  background-color: #ffffde;
+  padding-top: 50px;
+  color: #252726;
+  text-align: center;
+  font-family: 'Ultra', serif;
+  font-size: 24px;
+}
+
+/* NOTE: fix to make border show on hover */
+#merch:hover {
+  border-color: #252726;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 24px;
+  }
+}
