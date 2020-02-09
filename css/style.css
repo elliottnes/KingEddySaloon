@@ -11,16 +11,10 @@ h1, h2, h3 {
   text-align: center;
 }
 
-h1::before {
-  background: url('image/left.jpg');
-  height: 20px;
-  width: 20px;
-}
-
 h6 {
   font-family: 'Ultra', serif;
   color: #ffffde;
-  font-size: 12px;
+  font-size: 22px;
   letter-spacing: 1px;
   text-align: center;
 }
@@ -125,7 +119,7 @@ p {
 
 /* NOTE: fix to make border show on hover */
 #merch:hover {
-  font-size: 12px;
+  font-size: 18px;
   outline: 5px solid #252726;
   outline-offset: -10px;
 }
@@ -137,5 +131,55 @@ p {
 
   .sidenav a {
     font-size: 24px;
+  }
+}
+
+@media (max-width: 799px) {
+  .sidenav a {
+    font-size: 24px;
+    padding: 8px 20px 8px 8px;
+  }
+
+  .menu {
+    color: #f7ee31;
+  }
+
+  h1 {
+    font-size: 20px
+  }
+
+  h6 {
+    font-size: 18
+  }
+
+  #merch {
+    height: 100px;
+  }
+
+  .contact-height {
+    height: 100px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 960px) {
+  .sidenav a {
+    font-size: 42px;
+    padding: 8px 20px 8px 8px;
+  }
+
+  #merch {
+    height: 100px;
+  }
+
+  .contact-height {
+    height: 150px;
+  }
+
+  h1 {
+    font-size: 42px
+  }
+
+  h6 {
+    font-size: 12
   }
 }

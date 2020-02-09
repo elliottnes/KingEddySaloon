@@ -125,7 +125,16 @@
     width: 100%;
   }
 
+  .bit-33 {
+    width: 100%;
+    margin: 0px
+  }
+
   .bit-4 {
+    width: 100%;
+  }
+
+  .bit-44 {
     width: 100%;
   }
 
@@ -160,6 +169,10 @@
   .bit-12 {
     width: 100%;
   }
+
+  .bit-90, .center {
+    width: 100%
+  }
 }
 
 @media (min-width: 30em) and (max-width: 50em) {
@@ -172,6 +185,10 @@
     width: 50%;
   }
 
+  .bit-44 {
+    width: 48%
+  }
+
   .bit-1,
   .bit-2,
   .bit-3,
@@ -180,22 +197,28 @@
   .bit-9,
   .bit-11,
   .center,
-  .bit-33 {
+  .bit-33,
+  .bit-90 {
     width: 100%;
+  }
+
+  .bit-33 {
+    margin: 0px
   }
 }
 
-@media (min-width: 50em) and (max-width: 68.75em) {
+@media (min-width: 50em) and (max-width: 80em) {
 
   .bit-2,
-  .bit-7 {
+  .bit-7, {
     width: 100%;
   }
 
   .bit-4,
+  .bit-44,
   .bit-8,
   .bit-10,
-  .bit-12 {
+  .bit-12, {
     width: 50%;
   }
 }
