@@ -10,8 +10,10 @@
   <!-- NOTE: Stylesheets and JS -->
   <link rel="stylesheet" type="text/css" href="css/lemonade.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-
-  <script type="text/javascript" src="js/nav.js"></script>
+  <script type="text/javascript" src="js/nav.js">
+  </script>
+  <link rel="stylesheet" href="css/aos.css" />
+  <script src="js/aos.js"></script>
 
 
   <!-- NOTE: Fonts -->
@@ -23,17 +25,20 @@
 </head>
 
 <body>
+  <script>
+    AOS.init();
+  </script>
   <div class="websiteborder">
 
     <!-- NOTE: Menu -->
     <div class="menu">
       <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">Our Story</a>
-        <a href="#">Booking</a>
-        <a href="#">Liquor Store</a>
-        <a href="#">Merch</a>
-        <a href="#">Contact</a>
+        <a href="#story">Our Story</a>
+        <a href="#booking">Booking</a>
+        <a href="#liquor">Liquor Store</a>
+        <a href="#merchandise">Merchandise</a>
+        <a href="#contact">Contact</a>
       </div>
 
       <div>
@@ -55,11 +60,11 @@
         </div>
       </div>
 
-      <div class="frame">
-        <h1 class="bit-1 bigmargin">OUR STORY</h1>
+      <div class="frame" id="story">
+        <h1 class="bit-1 bigmargin" data-aos="fade-up">OUR STORY</h1>
       </div>
 
-      <div class="frame">
+      <div class="frame" data-aos="fade-up">
         <div class="bit-4"></div>
         <p class="bit-2 littlemargin">
           What is now King Eddy Saloon was born in 1906 as a watering hole for the then high-class King Edward Hotel on E 5th Street. During Prohibition, King Eddy opened a speakeasy in its basement while operating its upstairs as a piano store
@@ -69,13 +74,13 @@
         <div class="bit-4"> </div>
       </div>
 
-      <div class="frame">
+      <div class="frame" data-aos="fade-up">
 
-        <h1 class="bit-1 bigmargin">BOOKING</h1>
+        <h1 class="bit-1 bigmargin" id="booking">BOOKING</h1>
 
       </div>
 
-      <div class="frame">
+      <div class="frame" data-aos="fade-up">
         <div class="bit-4">
         </div>
         <p class="bit-2 littlemargin">
@@ -87,7 +92,7 @@
 
 
 
-      <div class="bigmargin " id="img">
+      <div class="bigmargin" data-aos="fade-up" id="img liquor">
         <img src="images/bar.jpg" style="width:100%" />
         <div id="imgtext">
           <h1>LIQUOR STORE</h1>
@@ -107,21 +112,21 @@
       </div>
 
 
-      <div class="frame">
+      <div class="frame" data-aos="fade-up">
 
-        <h1 class="bit-1 bigmargin">MERCHANDISE</h1>
+        <h1 class="bit-1 bigmargin" id="merchandise">MERCHANDISE</h1>
 
       </div>
 
-      <div class="frame">
+      <div class="frame" data-aos="fade-up">
         <div class="bit-5">
         </div>
         <div class="merchframe bit-90">
           <!-- NOTE: add in margins at 1% then make columns -7% -->
-          <p class="bit-44 littlemargin" id="merch">Shirts</p>
-          <p class="bit-44 littlemargin" id="merch">Coasters</p>
-          <p class="bit-44 littlemargin" id="merch">Coozies</p>
-          <p class="bit-44 littlemargin" id="merch">Hats</p>
+          <p class="bit-44 littlemargin" id="merch">SHIRTS</p>
+          <p class="bit-44 littlemargin" id="merch">COASTERS</p>
+          <p class="bit-44 littlemargin" id="merch">COOZIES</p>
+          <p class="bit-44 littlemargin" id="merch">HATS</p>
         </div>
         <div class="bit-5">
         </div>
@@ -131,11 +136,11 @@
 
     </div>
 
-    <div class="frame">
-      <h1 class="bit-1 bigmargin">CONTACT</h1>
+    <div class="frame" data-aos="fade-up">
+      <h1 class="bit-1 bigmargin" id="contact">CONTACT</h1>
     </div>
 
-    <div class="frame littlemargin">
+    <div class="frame littlemargin" data-aos="fade-up">
       <div class="bit-33 contact-height" style="border:2px solid #ffffde; padding-top:25px">
 
         <p style="text-align:center">

@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #252726;
 }
@@ -154,10 +158,15 @@ p {
 
   #merch {
     height: 100px;
+    padding-top: 10px
   }
 
   .contact-height {
-    height: 100px;
+    height: 120px;
+  }
+
+  .littlemargin {
+    margin-top: 10px;
   }
 }
 
@@ -169,6 +178,7 @@ p {
 
   #merch {
     height: 100px;
+    padding-top: 20px
   }
 
   .contact-height {
